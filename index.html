@@ -34,6 +34,34 @@
       .font-lato {
         font-family: "Lato", sans-serif;
       }
+      .my-background {
+        position: relative;
+        width: 100%;
+        height: max-content;
+        border-radius: 8px;
+        background-image: url("./images/banner1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .my-background::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(38, 37, 37, 0.685);
+        border-radius: 8px;
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 50px;
+        color: white;
+      }
     </style>
     <script
       src="https://kit.fontawesome.com/3441af8d04.js"
@@ -530,6 +558,101 @@
           </button>
         </div>
       </section>
+      <!-- Deal of the day Section Ends Here -->
+      <!-- Meet the team section start from here -->
+      <section class="my-12">
+        <div class="my-background">
+          <div class="content">
+            <div
+              class="text-center lg:w-1/2 text-white mx-auto space-y-3 pt-12"
+            >
+              <h1 class="text-[20px] lg:text-5xl">Meet the team</h1>
+              <p>
+                Contrary to popular belief, is not simply random text. It has
+                roots in a piece of classical Latin literature from 45 BC,
+                making it over 2000 years old.
+              </p>
+            </div>
+            <div
+              class="flex flex-col lg:flex-row justify-center gap-28 items-center py-10"
+            >
+              <div class="flex items-center">
+                <div class="text-white text-center">
+                  <img src="./images/member1.png" alt="" />
+                  <h2 class="font-bold mt-8">Awlad Hossain</h2>
+                  <p>Fruits Expert</p>
+                  <div class="mt-4">
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-facebook"
+                    ></i>
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-linkedin"
+                    ></i>
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-square-twitter"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="text-white text-center">
+                  <img src="./images/member2.png" alt="" />
+                  <h2 class="font-bold mt-8">Safia Chowdhury</h2>
+                  <p>Fruits Expert</p>
+                  <div class="mt-4">
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-facebook"
+                    ></i>
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-linkedin"
+                    ></i>
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-square-twitter"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="text-white text-center">
+                  <img src="./images/member3.png" alt="" />
+                  <h2 class="font-bold mt-8">Rokib Hossain</h2>
+                  <p>Fruits Expert</p>
+                  <div class="mt-4">
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-facebook"
+                    ></i>
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-linkedin"
+                    ></i>
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-square-twitter"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="text-white text-center">
+                  <img src="./images/member4.png" alt="" />
+                  <h2 class="font-bold mt-8">Chaity</h2>
+                  <p>Fruits Expert</p>
+                  <div class="mt-4">
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-facebook"
+                    ></i>
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-linkedin"
+                    ></i>
+                    <i
+                      class="fa-brands bg-[#f85559] px-2 py-2 rounded-full fa-square-twitter"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Meet the team section end here -->
     </main>
   </body>
 </html>
