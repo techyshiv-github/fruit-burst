@@ -30,6 +30,7 @@
         },
       };
     </script>
+
     <style>
       .font-lato {
         font-family: "Lato", sans-serif;
@@ -73,8 +74,8 @@
     <header class="max-w-screen-xl mx-auto px-10 mt-2">
       <!-- nav section starts -->
       <nav>
-        <div class="navbar bg-[#F85559] rounded-full px-12">
-          <div class="navbar-start hidden lg:flex">
+        <div class="navbar hidden lg:flex bg-[#F85559] rounded-full px-12">
+          <div class="navbar-start flex">
             <ul class="menu menu-horizontal px-1 text-white text-[18px]">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
@@ -83,33 +84,6 @@
             </ul>
           </div>
           <div class="navbar-center">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96"
-              >
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div>
             <div class="flex items-center gap-1">
               <img class="w-14" src="./images/logo.png" alt="" />
               <p class="text-2xl lg:text-4xl text-white font-bold">
@@ -118,7 +92,7 @@
             </div>
           </div>
 
-          <div class="navbar-end">
+          <div class="navbar-end flex">
             <input
               class="px-3 py-3 w-4/5 rounded-full relative"
               type="search"
@@ -129,6 +103,40 @@
             <i
               class="fa-solid fa-magnifying-glass text-gray-400 absolute right-40"
             ></i>
+          </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="flex justify-between lg:hidden">
+          <div class="flex items-center gap-1">
+            <img class="w-14" src="./images/logo.png" alt="" />
+            <p class="text-2xl lg:text-4xl text-black font-bold">Fruit Burst</p>
+          </div>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -159,8 +167,8 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide4" class="btn bg-black btn-circle text-white">❮</a>
-              <a href="#slide2" class="btn bg-black btn-circle text-white">❯</a>
+              <a href="#slide4" class="btn btn-circle text-black">❮</a>
+              <a href="#slide2" class="btn btn-circle text-black">❯</a>
             </div>
           </div>
           <div id="slide2" class="carousel-item w-full relative">
@@ -186,8 +194,8 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide1" class="btn bg-black btn-circle text-white">❮</a>
-              <a href="#slide3" class="btn bg-black btn-circle text-white">❯</a>
+              <a href="#slide1" class="btn btn-circle text-black">❮</a>
+              <a href="#slide3" class="btn btn-circle text-black">❯</a>
             </div>
           </div>
           <div id="slide3" class="carousel-item w-full relative">
@@ -213,8 +221,8 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide2" class="btn bg-black btn-circle text-white">❮</a>
-              <a href="#slide4" class="btn bg-black btn-circle text-white">❯</a>
+              <a href="#slide2" class="btn btn-circle text-black">❮</a>
+              <a href="#slide4" class="btn btn-circle text-black">❯</a>
             </div>
           </div>
           <div id="slide4" class="carousel-item w-full relative">
@@ -240,8 +248,8 @@
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
-              <a href="#slide3" class="btn bg-black btn-circle text-white">❮</a>
-              <a href="#slide1" class="btn bg-black btn-circle text-white">❯</a>
+              <a href="#slide3" class="btn btn-circle text-black">❮</a>
+              <a href="#slide1" class="btn btn-circle text-black">❯</a>
             </div>
           </div>
         </div>
@@ -291,28 +299,35 @@
               it over 2000 years old.
             </p>
           </div>
-          <div class="flex items-center gap-6 mt-5 lg:mt-0">
-            <div>
-              <h1 class="font-bold text-xl lg:text-5xl text-titlecolor">29</h1>
-              <p class="text-center text-bodytextcolor">Days</p>
+
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="text-titlecolor text-5xl">
+                <span id="days">00</span>
+              </span>
+              Days
             </div>
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-            <div>
-              <h1 class="font-bold text-xl lg:text-5xl text-titlecolor">15</h1>
-              <p class="text-center text-bodytextcolor">Hours</p>
+            <div class="flex flex-col">
+              <span class="text-titlecolor text-5xl">
+                <span id="hours">00</span>
+              </span>
+              Hours
             </div>
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-            <div>
-              <h1 class="font-bold text-xl lg:text-5xl text-titlecolor">25</h1>
-              <p class="text-center text-bodytextcolor">Minutes</p>
+            <div class="flex flex-col">
+              <span class="text-titlecolor text-5xl">
+                <span id="minutes">00</span>
+              </span>
+              Minutes
             </div>
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-            <div>
-              <h1 class="font-bold texl-xl lg:text-5xl text-titlecolor">08</h1>
-              <p class="text-center text-bodytextcolor">Seconds</p>
+            <div class="flex flex-col">
+              <span class="text-titlecolor text-5xl">
+                <span id="seconds">00</span>
+              </span>
+              Seconds
             </div>
           </div>
         </div>
+
         <!-- Fruits Cards part starts -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           <!-- Card1 -->
@@ -810,5 +825,29 @@
       </div>
     </footer>
     <!-- Footer section end here -->
+
+    <!-- javascript for timer -->
+    <script>
+      var countDownDate = new Date(
+        "August 25, 2023 23:59:59 GMT+530"
+      ).getTime();
+
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+      }, 1000);
+    </script>
   </body>
 </html>
