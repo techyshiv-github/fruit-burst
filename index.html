@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .text-lato {
+        font-family: "Lato", sans-serif;
+      }
+      .body-text {
+        font-size: 80px;
+      }
+    </style>
+    <!-- <script
+      src="https://kit.fontawesome.com/4ad39c9065.js"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script
+      src="https://kit.fontawesome.com/3441af8d04.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body class="text-lato body-text">
+    <div class="bg-red-700 w-96 h-56">
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+
     <h1>Testing of HTML</h1>
   </body>
 </html>
