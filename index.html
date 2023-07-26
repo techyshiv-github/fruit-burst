@@ -23,6 +23,8 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              titlecolor: "#121212",
+              bodytextcolor: "rgba(18, 18, 18, 0.60)",
             },
           },
         },
@@ -104,7 +106,7 @@
       </nav>
       <!-- nav section ends -->
       <!-- Banner Section Starts-->
-      <section class="mt-8 z-10">
+      <section class="mt-8">
         <div class="carousel w-full rounded-xl relative">
           <div id="slide1" class="carousel-item w-full relative">
             <div class="hero w-full">
@@ -248,5 +250,42 @@
       <!-- Banner Section Starts-->
     </header>
     <!-- Header section Ends -->
+    <!-- Main Section Starts -->
+    <main class="max-w-screen-xl mx-auto px-10 lg:mt-36">
+      <!-- Deal of the Day section -->
+      <section>
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <div class="w-full text-center lg:text-left lg:w-2/4 space-y-3">
+            <h1 class="text-4xl font-bold text-titlecolor">Deal of the day</h1>
+            <p class="text-sm text-bodytextcolor">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="flex items-center gap-6 mt-5 lg:mt-0">
+            <div>
+              <h1 class="font-bold text-xl lg:text-5xl text-titlecolor">29</h1>
+              <p class="text-center text-bodytextcolor">Days</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div>
+              <h1 class="font-bold text-xl lg:text-5xl text-titlecolor">15</h1>
+              <p class="text-center text-bodytextcolor">Hours</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div>
+              <h1 class="font-bold text-xl lg:text-5xl text-titlecolor">25</h1>
+              <p class="text-center text-bodytextcolor">Minutes</p>
+            </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div>
+              <h1 class="font-bold texl-xl lg:text-5xl text-titlecolor">08</h1>
+              <p class="text-center text-bodytextcolor">Seconds</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
